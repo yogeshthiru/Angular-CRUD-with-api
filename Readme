@@ -1,0 +1,27 @@
+Hi there,
+to run this app, navigate to your application path in cmd then install npm packages using 
+
+    npm install
+
+then install bootstrap by
+
+    npm install bootstrap --save 
+
+this will include the latest version of bootstrap into your file
+then create a json server using the commands
+
+    npm i -g json-server
+
+now you can start the json server using the command
+    json-server --watch filename.json or json-server --watch db.json
+
+after this command paste your json data in the db.json then again run the above command
+now you can see your api is live in localhost 3000 in most of the cases,
+
+then install the following packages for searching, sorting and pagination
+
+    npm i ng2-search-filter
+    npm i ng2-order-pipe
+    npm i ngx-pagination
+
+I hope this will help you .
