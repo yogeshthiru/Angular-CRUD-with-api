@@ -1,0 +1,29 @@
+
+<div class="container-fluid">
+    <h2>Updating Values</h2><br/>
+    <br/>
+    <div class="form-group">
+        <label>First name</label>
+        <input type="text" class="form-control" [(ngModel)]="user.firstName">
+    </div>
+    <div class="form-group">
+        <label>Last name</label>
+        <input type="text" class="form-control" [(ngModel)]="user.lastName">
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input type="text" class="form-control" [(ngModel)]="user.email">
+    </div>
+    <div class="form-group">
+        <label>mobile</label>
+        <input type="text" class="form-control" [(ngModel)]="user.mobile">
+    </div>
+    <div class="form-group">
+        <label>salary</label>
+        <input type="text" class="form-control" [(ngModel)]="user.salary">
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-warning" (click)="update()">Update</button>
+    </div>
+    
+</div>

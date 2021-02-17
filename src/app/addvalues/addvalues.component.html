@@ -1,0 +1,57 @@
+
+<!-- <div class="mar">
+<form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
+    <input type="text" name="id" ngModel placeholder="id"> <br>
+    <input type="text" name="firstName" ngModel placeholder="firstName"> <br>
+    <input type="text" name="lastName" ngModel placeholder="lastName"> <br>
+    <input type="text" name="email" ngModel placeholder="email"> <br>
+    <input type="text" name="mobile" ngModel placeholder="mobile"> <br>
+    <input type="text" name="salary" ngModel placeholder="salary"> <br>
+    <button type="submit">save</button>
+</form>
+</div> -->
+<div class="mar">
+    <h2>Add Values</h2><br/>
+    <!-- <p>My name is {{value}}</p>
+    <button (click)="getval()">Update button</button> -->
+    <br/>
+<form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
+    <div class="row">
+      <div class="col-sm-12">
+        <input type="text" class="form-control" name="id" ngModel placeholder="id"> <br>
+      </div>
+
+      <div class="col-sm-12">
+        <input type="text" class="form-control" name="firstName" ngModel placeholder="firstName"> <br>
+      </div>
+
+      <div class="col-sm-12">
+        
+        <input type="text" class="form-control" name="lastName" ngModel placeholder="lastName"> <br>
+      </div>
+
+      <div class="col-sm-12">
+        
+        <input type="text" class="form-control" name="email" ngModel placeholder="email"> <br>
+      </div>
+
+      <div class="col-sm-12">
+       
+        <input type="text" class="form-control"  name="mobile" ngModel placeholder="mobile"> <br>
+      </div>
+
+      <div class="col-sm-12">
+        
+        <input type="text" class="form-control" name="salary" ngModel placeholder="salary"> <br>
+      </div>
+
+      <div class="col-sm-12">
+        <button class="btn btn-success" type="submit">save</button>
+      </div>
+
+     
+
+
+    </div>
+  </form>
+</div>

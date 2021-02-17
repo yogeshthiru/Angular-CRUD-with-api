@@ -1,0 +1,33 @@
+
+<nav class="navbar">
+    <input class="form-control" type="text" name="firstName" [(ngModel)]= "firstName" (ngModelChange)="Search()"
+       placeholder="Enter the First Name">
+</nav>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th (click)="sort('id')">User id &nbsp;<i class="fa fa-sort"></i></th>
+            <th (click)="sort('firstName')">First name  &nbsp;<i class="fa fa-sort"></i></th>
+            <th>Lastname</th>
+            <th>Email</th>
+            <th>mobile</th>
+            <th>salary</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users | orderBy: key: reverse | paginate: {itemsPerPage:5,currentPage:p}">
+            <td> {{user.id}}  </td>
+            <td> {{user.firstName}}  </td>
+            <td> {{user.lastName}}  </td>
+            <td> {{user.email}}  </td>
+            <td> {{user.mobile}}  </td>
+            <td> {{user.salary}}  </td>
+            <td>
+                <button type="button" class="btn btn-danger" (click)="deleteRow(user.id)">Delete</button>&nbsp;
+                <button type="button" class="btn btn-primary" (click)="update(user.id)">Update</button>
+            </td>
+        </tr>
+    </tbody>
+    <pagination-controls (pageChange)="p =$event"></pagination-controls>
+</table>
